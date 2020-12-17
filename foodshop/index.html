@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--boodstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<title>Food Shop</title>
+	<!--<style type="text/css">
+		h1{
+			color: red;
+		}
+	</style>-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header><a href="registration.html" class="btn btn-primary" target="_blank">Registration</a>
+		<h1>Food Shop</h1>
+	</header>
+
+	<div id="title" class="section header">
+  		<h2>Best Food Shop</h2>
+	</div>
+
+	<main>
+		<section class = 'buttons'>
+		<button  id = 'show-card' class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ 		 Card (<span id="count">0</span>)
+		</button>	
+		<button id = 'clearcard' class="btn btn-primary">Clear card</button>
+		</section>
+		<hr>
+		<section class="fruits">
+			<h2>Fruits</h2>
+			<article id=1>
+				<img src="https://sites.psu.edu/lifeitmoveson/files/2017/10/orange-1hoca2l.jpg" alt="orange"/>
+				<h3>Orange</h3>
+				<p>price $10</p>
+				<button class="add-to-card btn btn-primary">Add to card</button>	
+				
+			</article>
+			<article id=2>
+			<img src="https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG.jpg" alt="banana"/>
+				<h3>Banana</h3>
+				<p>price $5</p>
+				<button class="add-to-card btn btn-primary">Add to card</button>	
+					
+			</article>
+			<article id=3>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUiTsNTclM32I7lnZ0uKEf47iEiBOOpV4IZQ&usqp=CAU"/>
+				<h3>Lemon</h3>
+				<p>price $15</p>
+				<button class="add-to-card btn btn-primary">Add to card</button>	
+			</article>
+		</section>
+	</main>
+	<hr>
+
+<!--boodstrap-->
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/assortment-of-fruits.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/mein_d4fbe.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/vegetables.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+	<hr>
+
+	<footer>
+		<p>&copy; all right reserved</p>
+	</footer>
+	
+	<!--boodstrap-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Basket</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <table class= "show-card-table" id='basket'></table>
+   <div>Total price: $<span id = 'total-card' class = 'total-card'></span> </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<script type="text/javascript" src="script.js" defer></script>
+
+	<!--boodstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	
+</body>
+</html>
